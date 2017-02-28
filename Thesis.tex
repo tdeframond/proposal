@@ -1,0 +1,91 @@
+%% ----------------------------------------------------------------
+%% Thesis.tex -- MAIN FILE (the one that you compile with LaTeX)
+%% ---------------------------------------------------------------- 
+
+% Set up the document
+\documentclass[a4paper, 11pt, oneside]{Thesis}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
+\graphicspath{Figures/}  % Location of the graphics files (set up for graphics to be in PDF format)
+
+% Include any extra LaTeX packages required
+\usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
+\usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
+\usepackage{vector}  % Allows "\bvec{}" and "\buvec{}" for "blackboard" style bold vectors in maths
+\hypersetup{urlcolor=blue, colorlinks=true}  % Colours hyperlinks in blue, but this can be distracting if there are many links.
+
+%% ----------------------------------------------------------------
+\begin{document}
+\frontmatter      % Begin Roman style (i, ii, iii, iv...) page numbering
+
+% Set up the Title Page
+\title  {COMP-9710A Master Project Proposal}
+\authors  {\texorpdfstring
+            {\href{theo.de-framond@insa-lyon.fr}{Theo DE FRAMOND}}
+            {Theo DE FRAMOND}
+            }
+\addresses  {\groupname\\\deptname\\\univname}  % Do not change this here, instead these must be set in the "Thesis.cls" file, please look through it instead
+\date       {\today}
+\subject    {}
+\keywords   {}
+
+\maketitle
+%% ----------------------------------------------------------------
+
+\setstretch{1.3}  % It is better to have smaller font and larger line spacing than the other way round
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{}  % Clears all page headers and footers
+\rhead{\thepage}  % Sets the right side header to show the page number
+\lhead{}  % Clears the left side page header
+
+\pagestyle{fancy}  % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\clearpage  % Declaration ended, now start a new page
+
+
+\pagestyle{fancy}  %The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+
+%% ----------------------------------------------------------------
+\lhead{\emph{Contents}}  % Set the left side page header to "Contents"
+\tableofcontents  % Write out the Table of Contents
+
+
+\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+
+
+%% ----------------------------------------------------------------
+\mainmatter	  % Begin normal, numeric (1,2,3...) page numbering
+\pagestyle{fancy}  % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis, as separate files
+% Just uncomment the lines as you write the chapters
+
+\section{Introduction}
+Title project : \Large Functional testing and qualification of the Serval Mesh Extender
+\normalsize \par
+The Serval Project is a suite of technologies designed to facilitate and sustain mobile telecommunications in the absence of supporting infrastructure, such as cellular networks or electricity. \par The two main components of the Serval Project are the Serval Mesh Extender Hardware and the Serval Mesh App. Basically the Serval Mesh Extender is a low-cost communications relay device that extends the range of communications among phones using Wifi technologie. 
+
+For the year 2017, the Australian Department of Foreign Affairs and Trade have commissioned the University to pilot Serval in the Pacific. Consequently, we have to prepare the Serval Mesh Extender technologies for field use in tropical-maritime environments, and without any dependencies on mains electricity. To this end the first Serval Mesh Extender is being redesigned to satisfy these requirements. However, this process is not yet complete. \par
+
+\section{Project Focus}
+
+Therefore there is a need to devise and apply a testing regime for the new Serval Mesh Extender design, to ensure that it meets the necessary functional requirements. Moreover we also have to ensure that the hardware units are easily possible to manufacturing. The focus of my project will be on the creation and application of such test protocols in order to be sure that the Serval Mesh Extender devices are ready for deployment in the field pilot. 
+
+\section{Background Survey}
+\subsection{The Pacific Humanitarian Challenge}
+
+In November 2015 the Australian government called innovators, entrepreneurs, designers and academics to rethink humanitarian response with the Pacific Humanitarian Challenge. It received 129 applications from 20 countries across five continents in which they chose only five winners. The Serval Project is obviously one of them and since then has been piloting and implementing
+
+\section{Methodology}
+\section{Conclusion}
+
+%% ----------------------------------------------------------------
+% Now begin the Appendices, including them as separate files
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+\backmatter
+
+\end{document}  % The End
+%% ----------------------------------------------------------------

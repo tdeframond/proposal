@@ -1,0 +1,8 @@
+\vspace {2em}
+\contentsline {section}{\numberline {0.1}Introduction}{1}{section.2}
+\contentsline {section}{\numberline {0.2}Project Focus}{1}{section.3}
+\contentsline {section}{\numberline {0.3}Background Survey}{1}{section.4}
+\contentsline {section}{\numberline {0.4}Methodology}{1}{section.5}
+\contentsline {section}{\numberline {0.5}Conclusion}{1}{section.6}
+\vspace {2em}
+\vspace {2em}
