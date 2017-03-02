@@ -60,46 +60,58 @@
 % Include the chapters of the thesis, as separate files
 % Just uncomment the lines as you write the chapters
 
-\section{Introduction}
-Title project : \Large Functional testing and qualification of the Serval Mesh Extender
-\normalsize \par
+\chapter{Introduction}
+\begin{description}
+\Large
+\item[Title project: ] Functional testing and qualification of the Serval Mesh Extender
+\item[Supervisor: ] Dr. Paul GARDNER-STEPHEN
+\end{description}
+\normalsize
 The Serval Project is a suite of technologies designed to facilitate and sustain mobile telecommunications in the absence of supporting infrastructure, such as cellular networks or electricity. \par The two main components of the Serval Project are the Serval Mesh Extender Hardware and the Serval Mesh App. Basically the Serval Mesh Extender is a low-cost communications relay device that extends the range of communications among phones using Wifi technologie. The laboratory has a partnership with my university in France named INSA de Lyon so that each year, french students can help on the project as a one semester exchange program. This is why I am here now.  
 
 For the year 2017, the Australian Department of Foreign Affairs and Trade have commissioned the University to pilot Serval in the Pacific. Consequently, we have to prepare the Serval Mesh Extender technologies for field use in tropical-maritime environments, and without any dependencies on mains electricity. To this end the first Serval Mesh Extender is being redesigned to satisfy these requirements. However, this process is not yet complete. \par
 
-\section{Project Focus}
+\chapter{Project Focus}
 
 Therefore there is a need to devise and apply a testing regime for the new Serval Mesh Extender design, to ensure that it meets the necessary functional requirements. Moreover we also have to ensure that the hardware units are easily possible to manufacturing. The focus of my project will be on the creation and application of such test protocols in order to be sure that the Serval Mesh Extender devices are ready for deployment in the field pilot. 
 
-\section{Background Survey}
+\chapter{Background Survey}
 
-Here are five papers and documents which help me writing this background survey :
-- http://pacifichumanitarianchallenge.org/ 
-- The Serval Project : Practical Wireless Ad-Hoc Mobile Telecommunications. Dr. Paul Gardner-Stephen, Rural, Remote and Humanitarian Telecommunications Fellow, Flinders University and Founder, Serval Project, Inc. July 22, 2011.
-- Serval Mesh Software-Wifi Multi Model Management. Dr. Paul Gardner-Stephen and Swapna Palaniswamy, School of Computer Science, Engineering and Mathematics, Flinders University, Adelaide, Australia. Amritpuri, Kollam. December 2011. 
-- The Village Telco project: a reliable and practical wireless mesh telephony infrastructure. Michael Adeyeye and Paul Gardner-Stephen. P.J Wireless Com Network. 2011. doi :10.1186/1687-1499-2011-78
-- The serval mesh: A platform for resilient communications in disaster and crisis. Global Humanitarian Technology Conference. IEEE 2013.
-
+Here are five papers and documents which helped me writing this background survey :
+\begin{enumerate}
+\item http://pacifichumanitarianchallenge.org/ 
+\item The Serval Project : Practical Wireless Ad-Hoc Mobile Telecommunications. Dr. Paul Gardner-Stephen, Rural, Remote and Humanitarian Telecommunications Fellow, Flinders University and Founder, Serval Project, Inc. July 22, 2011.
+\item Serval Mesh Software-Wifi Multi Model Management. Dr. Paul Gardner-Stephen and Swapna Palaniswamy, School of Computer Science, Engineering and Mathematics, Flinders University, Adelaide, Australia. Amritpuri, Kollam. December 2011. 
+\item The Village Telco project: a reliable and practical wireless mesh telephony infrastructure. Michael Adeyeye and Paul Gardner-Stephen. P.J Wireless Com Network. 2011. doi :10.1186/1687-1499-2011-78
+\item The serval mesh: A platform for resilient communications in disaster and crisis. Global Humanitarian Technology Conference. IEEE 2013.
+\end{enumerate}
 In November 2015 the Australian government called innovators, entrepreneurs, designers and academics to rethink humanitarian response with the Pacific Humanitarian Challenge. It received 129 applications from 20 countries across five continents in which they chose only five winners. The Serval Project is obviously one of them and since then has been piloting and implementing its innovative solution. The four other winners are Pacific Drone Imagery Dashboard, Pacific Local Supplier Engagement Project, an Easily-Deployed Low-Cost Unmanned Aerial System and a Mobile SME Insurance in the Pacific Island. 
  \\
 
-The purpose of these articles is to give an introduction into the genesis and motivation behind the Project which may be the first practical mesh mobile telephony platform.  They are divided into four different themes. The first one explains the motivations of such a project and the different use-cases we can imagine for this. The second one provides brief introductions to each of the key technologies. The third one explore how these features can help in the use-cases introduced in section one. Finally, the last theme is a discussion about the trial with the first prototype. \par
+The purpose of these articles is to give an introduction into the genesis and motivation behind the Project which may be the first practical mesh mobile telephony platform.  They are divided into four different themes. The first one explains the motivations of such a project and the different use-cases we can imagine for this. The second one provides brief introductions to each of the key technologies. The third one explore how these features can help in the use-cases. Finally, the last theme is a discussion about the trial with the first prototype. \par
 
 It has been seven years that Paul and his researcher team work on Serval because it seems to them that there is a need for mobile telecommunications system of being able to continue to operate without any infrastructure (physical or organisational). In this case we could use it in a great variety of scenarios included poor countries without real infrastructures and natural disasters. \\
 The Serval Project can be considered as a derivative of The Village Telco Project, specially of their Mesh Potato which is an unusually robust mesh Wifi router with integrated analog telephone port designed to provide local fixed-line style communication. As this one was already supposed to be use in Africa and Asia, it is designed as a light power consumer. Also we can communicate or phone an other Mesh Potato by using the IP address of these. Serval Project implements the same feature but with adding phone number in it so people can use normal phone number instead of IP address. \par
-The Serval Team has developed a first version of the Mesh Extender during the last past years. This one has made its proof in different context and make the team believe they will reach the aim of the project. They just have to upgrade and improve the features and characteristics of it in order to make it functional for the Humanitarian Challenge, which is on one hand, to be waterproof and resistant against the tropical climat and disasters and on the other hand, to be autonomous. That is why, the laboratory are at the moment developing a second version of the Mesh Extender which can find his power in either a solar panel, or a battery, or a car battery and which consume less energy than before. This is where we are now and I will have to test them. 
+The Serval Team has developed a first version of the Mesh Extender during the last past years. This one has made its proof in different context and make the team believe they will reach the aim of the project. They just have to upgrade and improve the features and characteristics of it in order to make it functional for the Humanitarian Challenge, which is on one hand, to be waterproof and resistant against the tropical climat and disasters and on the other hand, to be autonomous. That is why, the laboratory are at the moment developing a second version of the Mesh Extender which can find his power in either a solar panel, or a battery, or a car battery and which consume less energy than before. This is where we are now.
 
+\chapter{Methodology}
 
-\section{Methodology}
-\section{Conclusion}
+For this work I will follow an Agile methodology. Therefore I will have to organise my experiments in an iterative way and plan them with precise steps and precise goals.  \\
+The tests must be automatic and quick. That is why I need to implement them in a C software environment. Basically I will connect the Mesh Extenders with a laptop and then run all the tests on it. In the end, it will display all the results so we can know if the extenders are ready to use or if we have to do some changes on the settings. \\
+These are the different parts of the Serval Project I will have to implement tests : 
+\begin{itemize}
+\item Mesh Extender hardware 
+\item Mesh Extender cables
+\item Mesh Extender software 
+\item Mesh Extender network functions
+\item end-to-end connection testing with various topologies
+\item manufacturing quality control 
+\item acceptance testing
+\end{itemize}
+Since we have to be ready for the Vanuatu expedition which will happen in May, work must be done in two or three months. That makes thus two or three tests by months. According to the fact I have to see and learn how the Mesh Extender operates and  the callback I need in C developing, I will have less time and I think I will have lots of work. 
 
-%% ----------------------------------------------------------------
-% Now begin the Appendices, including them as separate files
-
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-
-\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
-\backmatter
+\chapter{Conclusion}
+In conclusion, here I am now coming from France in the Telecommunication Laboratory from Flinders to work on the Serval Project. I find the subject really interesting because I think there is a need to create and invent a new cheap and useful phone network so everybody has the right to communicate with distance. The humanitarian side of the project is of course one of the biggest motivation with the research activity. I am very glad to work for a real and fair purpose instead of working just to make money. I never did before this kind of tests development and I'am happy to learn about it. Moreover we will pilot this project in Vanuatu in May and that makes this project even more interesting. 
 
 \end{document}  % The End
 %% ----------------------------------------------------------------
